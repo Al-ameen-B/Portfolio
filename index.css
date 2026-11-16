@@ -1,44 +1,64 @@
 body{
 	background-color:#12171e;
+	font-family: system-ui,sans-serif;
+	line-height: 1.6;
 }
-header{padding: 5px;
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+}
+.logo{
+	color: white;
+	text-decoration: none;
 }
 .container1{display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	gap:50px;
+	justify-content: right;
+	gap:20px;
 	text-decoration: none;
 
 }
 nav ul{
 		display: flex;
-		text-decoration: none;
+		flex-wrap: wrap;
 		list-style: none;
-		gap:10px;
-		display: center;
+		padding: 0;
+		margin: 0;
+
+}
+nav ul li {font-size: 14px;
 }
 .at-a-glance{
 			color: white;
-			padding: 50px;
+			padding: 20px 50px 50px;
+			max-width: 800px;
+			margin: 0 auto;
 }
 .container{
 			display: flex;
 			flex-direction: column;
-			gap:50px;
+			gap:20px;
 			justify-content: center;
 			margin: 0 auto;
 }
 .container1-b{
 	display: inline-block;
 	color: white;
-	padding: 12px 24px;
+	padding: 6px 10px;
 	border-radius: 6px;
 	font-size: 14px;
 	text-decoration: none;
 	gap:50px;
 }
 .box{width: auto;
-	height: 125px;
+	min-height: 100px;
 	border: 3px solid white;
 	border-radius: 14px;
 	box-sizing: border-box;
@@ -49,9 +69,14 @@ nav ul{
 .me{
 	color: white;
 	justify-content: center;
-	padding:  0 56px;
+	max-width: 800px;
+	padding:  20px 50px 20px;
 	margin: 0 auto;
-	;
+	
+}
+.me h1{
+	font-size: 1.8rem;
+	line-height: 1.2;
 }
 .e1{
 	display: flex;
@@ -59,11 +84,12 @@ nav ul{
 	justify-content: center;
 	gap:50px;
 	text-decoration: none;
+	margin-top: 40px;
 	}
 .me-button{
 	display: inline-block;
-	border: 2px solid blue;
-	color: blue;
+	border: 2px solid white;
+	color: white;
 	padding: 12px 24px;
 	width: auto;
 	border-radius: 6px;
@@ -77,4 +103,17 @@ footer{
 	color: #f9faf8;
 	text-align: center;
 	padding: 25px 0;
+}
+@media (min-width: 900px){
+	header{padding: 14px max(50px, calc((100% - 1100px) / 2 + 50px));
+		font-size: 22px;}
+	.container1-b{font-size: 17px;
+			padding: 8px 14px;}
+	.me, .at-a-glance{max-width: 1100px;}
+	.me h1{font-size: 2.8rem;}
+	.me p{font-size: 1.2rem; max-width: 70ch;}
+	.e1{justify-content: flex-start; gap:20px;}
+	.me-button{font-size: 17px; padding: 14px 28px;}
+	.container{gap:24px;}
+	.box{font-size: 22px;}
 }
