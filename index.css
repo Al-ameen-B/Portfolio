@@ -38,6 +38,10 @@ nav ul{
 }
 nav ul li {font-size: 14px;
 }
+hr{
+	width: 100%;
+	margin: 0;
+}
 .at-a-glance{
 			color: white;
 			padding: 20px 50px 50px;
