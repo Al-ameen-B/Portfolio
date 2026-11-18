@@ -50,6 +50,7 @@ body{
 	color: white;
 	background-color:#12171e;
 	font-family: system-ui,sans-serif;
+	min-height: 100vh;
 	line-height: 1.6;
 }
 @media (min-width: 900px){
